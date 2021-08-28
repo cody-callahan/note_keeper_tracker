@@ -32,6 +32,7 @@ const getNotes = () =>
       'Content-Type': 'application/json',
     },
   });
+// add then parts to this fetch request, which we will display in notes.html
 
 const saveNote = (note) =>
   fetch('/api/notes', {
@@ -41,6 +42,8 @@ const saveNote = (note) =>
     },
     body: JSON.stringify(note),
   });
+// and then to this fetch and save it to the db.json file in db directory
+
 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
@@ -49,6 +52,7 @@ const deleteNote = (id) =>
       'Content-Type': 'application/json',
     },
   });
+// delete note by ID from the db.json file
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
@@ -65,6 +69,8 @@ const renderActiveNote = () => {
     noteText.value = '';
   }
 };
+// see active note?  add this function to the notes html file?
+
 
 const handleNoteSave = () => {
   const newNote = {
@@ -76,6 +82,8 @@ const handleNoteSave = () => {
     renderActiveNote();
   });
 };
+// runs save note function, then 
+
 
 // Delete the clicked note
 const handleNoteDelete = (e) => {
