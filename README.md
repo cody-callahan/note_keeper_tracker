@@ -6,6 +6,8 @@ This app allows a user to create notes, save them and reference them later. In t
 ## Tools
 I used the express package from NPM for this project
 
-## Contact
+## Heroku
+You can check out the app here: https://fathomless-shelf-44027.herokuapp.com/
 
+## Contact
 You can email me at codycallahan02@gmail.com for further questions.
